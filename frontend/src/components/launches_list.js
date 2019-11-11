@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Launches = ({ launches }) => {
+const LaunchesList = ({ launches }) => {
     return (
       <div>
         <center>
         <h1>SpaceX Launches</h1>
         {launches.map((launch, id) => (
-          <div key = {id}>
+          <div>
             <h5>{launch.mission_name}</h5>
             <h5>{launch.launch_year}</h5>
           </div>
@@ -16,4 +16,4 @@ const Launches = ({ launches }) => {
     )
   };
 
-  export default Launches
+  export default LaunchesList
