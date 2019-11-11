@@ -7,10 +7,8 @@ const Launches = ({ launches }) => {
         <h1>SpaceX Launches</h1>
         {launches.map((launch, id) => (
           <div key = {id}>
-            <div>
-              <h5>{launch.mission_name}</h5>
-              <h5>{launch.launch_year}</h5>
-            </div>
+            <h5>{launch.mission_name}</h5>
+            <h5>{launch.launch_year}</h5>
           </div>
         ))}
         </center>
