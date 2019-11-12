@@ -8,13 +8,10 @@ const LaunchesObjects = ({ launchesObjects }) => {
       <table>
         <tr>
           <th>Mission name</th>
-          <th>Launch Year</th>
+          <th>Launch year</th>
         </tr>
           <tr>
-            <td>
-              {launchesObjects[0]["mission_name"]}
-              {launchesObjects[0]["launch_year"]}
-            </td>
+            {launchesObjects[0].mission_name}
           </tr>
       </table>
     </center>

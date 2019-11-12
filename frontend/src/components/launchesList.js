@@ -5,21 +5,23 @@ const LaunchesList = ({ launchesList }) => {
     <div>
       <center>
         <table>
+          <tbody>
           <tr>
             <th>Mission name</th>
             <th>Launch year</th>
           </tr>
           <tr>
-            {launchesList.map((launches) => (
-              launches.map((launch, id) => (
+            {launchesList.map((launchesList) => (
+             launchesList.map((launch, id) => (
                 <div key={id}>
                   <td>{launch.mission_name}</td>
                   <td>{launch.launch_year}</td>
                 </div>
-              ))
+              )) 
             ))
             }
           </tr>
+          </tbody>
         </table>
       </center>
     </div>

@@ -1,36 +1,47 @@
-import React, { Component } from 'react';
-import LaunchesObjects from './components/launchesObjects'
-import LaunchesList from './components/launchesList'
+import React, { useEffect, useState } from "react";
+import LaunchesObjects from "./components/launchesObjects";
+import LaunchesList from "./components/launchesList";
+import axios from "axios";
 
-class App extends Component{
+const App = () => {
+  const [launchesObjects, setLaunchesObjects] = useState([]);
+  const [launchesList, setlaunchesList] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  state = {
-    launchesObjects: [],
-    launchesList: []
-  }
-   componentDidMount() {
-     fetch('http://127.0.0.1:8000')
-    .then(res => res.json())
-    .then((data) => {
-      this.setState({ launchesObjects: data })
-    })
-    .catch(console.log) 
-     fetch('http://127.0.0.1:8000/list')
-    .then(res => res.json())
-    .then((data) => {
-      this.setState({ launchesList: data })
-      console.log("FETCH:",{data})
-    })
-    .catch(console.log) 
-  }
-  render() {
-    return (
-      <>
-      <LaunchesObjects launchesObjects={this.state.launchesObjects}/>
-      <LaunchesList launchesList={this.state.launchesList} />
-      </>
-    )
-  }
-}
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("http://127.0.0.1:8000");
+      setLaunchesObjects(response.data);
+    } catch (err) {
+      console.log(err);
+    }
+
+    try {
+      const response = await axios.get("http://127.0.0.1:8000/list");
+      setlaunchesList(response.data);
+    } catch (err) {
+      console.log(err);
+    }
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <>
+      {loading ? (
+        <center><h3>Carregando...</h3></center>
+      ) : (
+          <>
+            <LaunchesObjects launchesObjects={launchesObjects} />
+            <LaunchesList launchesList={launchesList} />
+          </>
+        )}
+    </>
+  );
+};
 
 export default App;
