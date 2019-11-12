@@ -17,6 +17,6 @@ Now the API will be available on your [localhost:8000]
 
 For the React part, make sure to:
 
-* Go to ```.../frontend/``` and exectute ```yarn start```
+* Go to ```.../frontend/``` and execute ```yarn start```
 
 The default browser will open with the launches informations.
