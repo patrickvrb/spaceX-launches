@@ -8,15 +8,15 @@ class App extends Component{
     launchesObjects: [],
     launchesList: []
   }
-  componentDidMount() {
-    fetch('http://127.0.0.1:8000')
+   componentDidMount() {
+     fetch('http://127.0.0.1:8000')
     .then(res => res.json())
     .then((data) => {
       console.log()
       this.setState({ launchesObjects: data })
     })
     .catch(console.log) 
-    fetch('http://127.0.0.1:8000/list')
+     fetch('http://127.0.0.1:8000/list')
     .then(res => res.json())
     .then((data) => {
       console.log()

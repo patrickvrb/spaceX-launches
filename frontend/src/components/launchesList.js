@@ -1,23 +1,29 @@
 import React from 'react'
 
 const LaunchesList = ({ launchesList }) => {
-  console.log("launches list", launchesList)
-    return (
-      <div>
-        <center>
-        <h2>SpaceX Launches LIST</h2>
-        {launchesList.map((launches) => (
-          launches.map((launch, id) => (
-            <div key = {id}>
-              <h5>{launch.mission_name}</h5>
-              <h5>{launch.launch_year}</h5>
-            </div>
-          ))
-        ))
-        }
-        </center>
-      </div>
-    )
-  };
+  return (
+    <div>
+      <center>
+        <table>
+          <tr>
+            <th>Mission name</th>
+            <th>Launch year</th>
+          </tr>
+          <tr>
+            {launchesList.map((launches) => (
+              launches.map((launch, id) => (
+                <div key={id}>
+                  <td>{launch.mission_name}</td>
+                  <td>{launch.launch_year}</td>
+                </div>
+              ))
+            ))
+            }
+          </tr>
+        </table>
+      </center>
+    </div>
+  )
+};
 
-  export default LaunchesList
+export default LaunchesList
