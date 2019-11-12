@@ -13,10 +13,11 @@ After cloning the repo, make sure to:
 
 Go to ```.../restAPI/``` and build the local Django server : ```python3 manage.py runserver```
 
-Now the API will be available on your [localhost:8000]
+Now the API will be available on your [ localhost:8000 ](localhost:8000)
 
 For the React part, make sure to:
 
-* Go to ```.../frontend/``` and execute ```yarn start```
+* Go to ```.../frontend/``` and execute ```yarn install```
+* Run it with ```yarn start```.
 
-The default browser will open with the launches informations.
+The default browser will open with the launches informations on [ localhost:3000 ](localhost:3000)
