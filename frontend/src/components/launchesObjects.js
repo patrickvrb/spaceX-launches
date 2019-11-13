@@ -5,8 +5,9 @@ const LaunchesObjects = ({ launchesObjects }) => {
   //console.log("Objects: ", launchesObjects)
   return (
     <center>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/SpaceX_Logo_Black.png" alt="SpaceX" class="logo"></img>
       <h1>Here is some information on SpaceX launches</h1>
-      <table cellPadding="15">
+      <table cellPadding="15" class="table">
         <tbody>
           <tr>
             <th></th>
