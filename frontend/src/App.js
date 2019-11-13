@@ -33,7 +33,7 @@ const App = () => {
   return (
     <>
       {loading ? (
-        <center><h3>Carregando...</h3></center>
+        <center><h4>Carregando...</h4></center>
       ) : (
           <>
             <LaunchesObjects launchesObjects={launchesObjects} />

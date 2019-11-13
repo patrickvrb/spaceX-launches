@@ -1,0 +1,13 @@
+h2 {
+    color: darkblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+
+.table{
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* body{
+    margin-left: 100px;
+} */
