@@ -1,13 +1,19 @@
-h2 {
-    color: darkblue;
+h1, h2 {
+    color: rgba(2, 2, 31, 0.507);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
   } 
 
-.table{
-    display: flex;
-    justify-content: space-between;
+.table1 {
+    padding-right : 20px; 
+    float:left;
+    padding-left: 10cm;
   }
 
-/* body{
-    margin-left: 100px;
-} */
+.table2 {
+    float:left;
+} 
+
+.align {
+    padding-left: 10cm;
+}

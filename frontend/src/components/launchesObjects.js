@@ -6,7 +6,7 @@ const LaunchesObjects = ({ launchesObjects }) => {
   return (
     <center>
       <h1>Here is some information on SpaceX launches</h1>
-      <table cellPadding="10">
+      <table cellPadding="15">
         <tbody>
           <tr>
             <th></th>

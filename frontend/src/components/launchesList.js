@@ -3,8 +3,8 @@ import React from 'react'
 const LaunchesList = ({ launchesList }) => {
   return (
     <body>
-        <h2>List of five upcoming launches</h2>
-        <table cellPadding="10" class="table">
+        <div class= "align"><h2>List of five upcoming launches</h2></div>
+        <table cellPadding="10" class="table1">
           <tbody>
             <tr>
               <th>Mission name</th>
@@ -19,7 +19,7 @@ const LaunchesList = ({ launchesList }) => {
           </tbody>
         </table>
         <h2>List of five past launches</h2>
-        <table cellPadding="10" class="table">
+        <table cellPadding="10" class="table2">
           <tbody>
             <tr>
               <th>Mission name</th>
