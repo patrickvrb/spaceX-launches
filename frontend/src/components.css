@@ -1,6 +1,6 @@
-h1, h2, caption {
-    color: rgba(2, 2, 31, 0.507);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1, h2, caption, center {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
   } 
 .table {
@@ -12,13 +12,20 @@ h1, h2, caption {
     padding-left: 10cm;
   }
 
+.boldfont{
+    font-size: 16pt;
+    padding-bottom: 10px;
+}
+
 .table2 {
     float:left;
 } 
 
 .align {
-    padding-left: 10cm;
+    font-size: 16pt;
+    padding-left: 9cm;
     padding-right: 0;
+    padding-bottom: 10px;
 }
 
 .logo{

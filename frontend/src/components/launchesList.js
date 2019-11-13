@@ -19,7 +19,7 @@ const LaunchesList = ({ launchesList }) => {
         </tbody>
       </table>
       <table cellPadding="10" class="table2">
-        <caption>List of five past launches</caption>
+        <caption class="boldfont">List of five past launches</caption>
         <tbody>
           <tr>
             <th>Mission name</th>
