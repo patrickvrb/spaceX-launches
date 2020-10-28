@@ -16,13 +16,13 @@ const LaunchesObjects = ({ launchesObjects }) => {
           </tr>
           <tr>
             <td>Latest Launch</td>
-            <td>{launchesObjects[1].mission_name}</td>
-            <td>{launchesObjects[1].launch_date}</td>
+            <td>{launchesObjects[1]?.mission_name}</td>
+            <td>{launchesObjects[1]?.launch_date}</td>
           </tr>
           <tr>
             <td>Next Launch</td>
-            <td>{launchesObjects[0].mission_name}</td>
-            <td>{launchesObjects[0].launch_date}</td>
+            <td>{launchesObjects[0]?.mission_name}</td>
+            <td>{launchesObjects[0]?.launch_date}</td>
           </tr>
         </tbody>
       </table>
