@@ -16,7 +16,7 @@ const LaunchesObjects = ({ launchesObjects }) => {
           <tr>
             <td>Latest Launch</td>
             <td>{launchesObjects["latest"]?.mission_name}</td>
-            <td>{launchesObjects["latest"]?.launch_date}</td>=
+            <td>{launchesObjects["latest"]?.launch_date}</td>
           </tr>
           <tr>
             <td>Next Launch</td>
