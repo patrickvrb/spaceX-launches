@@ -1,23 +1,11 @@
 # SpaceX Information
 
-Django API consuming SpaceX's public API and rendering using React.
-
+React application consuming SpaceX's public API and showing some rocket launches data.
 
 ## Instalation
 
-After cloning the repo, make sure to:
+Make sure to:
 
-* Create a virtual environment for the Django API: ```python3 -m venv venv```
-* Entering on virtual environment: ```source venv/bin/activate```
-* Installing packages: ```pip install requirements.txt```
-
-Go to ```.../restAPI/``` and build the local Django server : ```python3 manage.py runserver```
-
-Now the API will be available on your [ localhost:8000 ](localhost:8000)
-
-For the React part, make sure to:
-
-* Go to ```.../frontend/``` and execute ```yarn install```
-* Run it with ```yarn start```.
+* Execute ```npm install``` then ```npm start```.
 
 The default browser will open with the launches informations on [ localhost:3000 ](localhost:3000)
