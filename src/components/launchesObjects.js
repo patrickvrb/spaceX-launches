@@ -2,7 +2,6 @@ import React from 'react'
 import '../components.css';
 
 const LaunchesObjects = ({ launchesObjects }) => {
-  //console.log("Objects: ", launchesObjects)
   return (
     <center>
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/SpaceX_Logo_Black.png" alt="SpaceX" class="logo"></img>
@@ -16,13 +15,13 @@ const LaunchesObjects = ({ launchesObjects }) => {
           </tr>
           <tr>
             <td>Latest Launch</td>
-            <td>{launchesObjects[1]?.mission_name}</td>
-            <td>{launchesObjects[1]?.launch_date}</td>
+            <td>{launchesObjects["latest"]?.mission_name}</td>
+            <td>{launchesObjects["latest"]?.launch_date}</td>=
           </tr>
           <tr>
             <td>Next Launch</td>
-            <td>{launchesObjects[0]?.mission_name}</td>
-            <td>{launchesObjects[0]?.launch_date}</td>
+            <td>{launchesObjects["next"]?.mission_name}</td>
+            <td>{launchesObjects["next"]?.launch_date}</td>
           </tr>
         </tbody>
       </table>
