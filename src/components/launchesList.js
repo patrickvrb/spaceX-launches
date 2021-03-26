@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const LaunchesList = ({ launchesList }) => {
   return (
-    <center>
-      <table cellPadding="10" class="table1">
-        <caption class="align">List of five upcoming launches</caption>
+    <div class='list-table'>
+      <table cellPadding='10' cellSpacing='10'>
+        <caption>List of five upcoming launches</caption>
         <tbody>
           <tr>
             <th>Mission name</th>
             <th>Launch date</th>
           </tr>
-          {launchesList["upcoming"].map((launch, id) => (
+          {launchesList['upcoming'].map((launch, id) => (
             <tr key={id}>
               <td>{launch.mission_name}</td>
               <td>{launch.launch_date}</td>
@@ -18,14 +18,15 @@ const LaunchesList = ({ launchesList }) => {
           ))}
         </tbody>
       </table>
-      <table cellPadding="10" class="table2">
-        <caption class="boldfont">List of five past launches</caption>
+
+      <table cellPadding='10' cellSpacing='10'>
+        <caption>List of five first launches</caption>
         <tbody>
           <tr>
             <th>Mission name</th>
             <th>Launch date</th>
           </tr>
-          {launchesList["past"].map((launch, id) => (
+          {launchesList['past'].map((launch, id) => (
             <tr key={id}>
               <td>{launch.mission_name}</td>
               <td>{launch.launch_date}</td>
@@ -33,8 +34,8 @@ const LaunchesList = ({ launchesList }) => {
           ))}
         </tbody>
       </table>
-    </center>
-  )
+    </div>
+  );
 };
 
-export default LaunchesList
+export default LaunchesList;
