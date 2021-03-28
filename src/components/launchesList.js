@@ -10,7 +10,7 @@ const LaunchesList = ({ launchesList }) => {
             <th>Mission name</th>
             <th>Launch date</th>
           </tr>
-          {launchesList['upcoming'].map((launch, id) => (
+          {launchesList.upcoming.map((launch, id) => (
             <tr key={id}>
               <td>{launch.mission_name}</td>
               <td>{launch.launch_date}</td>
@@ -26,7 +26,7 @@ const LaunchesList = ({ launchesList }) => {
             <th>Mission name</th>
             <th>Launch date</th>
           </tr>
-          {launchesList['past'].map((launch, id) => (
+          {launchesList.past.map((launch, id) => (
             <tr key={id}>
               <td>{launch.mission_name}</td>
               <td>{launch.launch_date}</td>
