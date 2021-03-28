@@ -7,7 +7,7 @@ const LaunchesObjects = ({ launchesObjects }) => {
       <img
         src='https://upload.wikimedia.org/wikipedia/commons/9/96/SpaceX_Logo_Black.png'
         alt='SpaceX'
-        class='logo'
+        className='logo'
       ></img>
       <h1>Here is some information on SpaceX launches</h1>
       <table cellPadding='10'>
